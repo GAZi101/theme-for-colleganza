@@ -7,11 +7,15 @@ html {
 
 .cloud-illus {
     position: absolute;
-    left: 9.23%;
+    /* left: 9.23%; */
     right: 42.47%;
     top: 7.89%;
     bottom: 2.71%;
     background: linear-gradient(223.15deg, #FFFFFF -0.77%, #43C5BF 88.93%);
+}
+
+.daftar-login-container {
+    background: rgb(78, 198, 200);
 }
 
 .bg-custom-orange {
@@ -118,6 +122,15 @@ button:focus {
 
 .icon-username {
     background: url(../asset/svg/person-outline.svg) no-repeat scroll 1px 1px;
+    /* background-color: #bec6cc; */
+    background-size: 5%;
+    background-position-x: 1%;
+    background-position: 2%;
+    padding-left: 30px;
+}
+
+.icon-enamdua {
+    background: url(../asset/svg/62.svg) no-repeat scroll 1px 1px;
     background-size: 5%;
     background-position-x: 1%;
     background-position: 2%;
@@ -130,4 +143,41 @@ button:focus {
     background-position-x: 1%;
     background-position: 2%;
     padding-left: 30px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(198, 198, 198);
+    /* opacity: 1; */
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(198, 198, 198);
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(198, 198, 198);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #bec6cc;
+}
+
+.form-control:-moz-placeholder {
+    color: #bec6cc;
+}
+
+.form-control::-moz-placeholder {
+    color: #bec6cc;
+}
+
+.form-control::placeholder {
+    color: #bec6cc;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #bec6cc;
 }
