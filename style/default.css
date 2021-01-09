@@ -1,3 +1,19 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(78, 198, 200);
+}
+
+.cloud-illus {
+    position: absolute;
+    left: 9.23%;
+    right: 42.47%;
+    top: 7.89%;
+    bottom: 2.71%;
+    background: linear-gradient(223.15deg, #FFFFFF -0.77%, #43C5BF 88.93%);
+}
+
 .bg-custom-orange {
     background-color: rgb(220, 105, 75);
 }
@@ -26,7 +42,8 @@ h3 {
     width: auto;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
     background-image: none;
 }
 
@@ -85,7 +102,10 @@ input {
     background-color: transparent;
 }
 
-input:focus, select:focus, textarea:focus, button:focus {
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
     outline: none;
 }
 
