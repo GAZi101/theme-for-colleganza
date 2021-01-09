@@ -1,0 +1,113 @@
+.bg-custom-orange {
+    background-color: rgb(220, 105, 75);
+}
+
+h3 {
+    color: rgb(220, 105, 75);
+}
+
+.card-heigth {
+    height: 90vh;
+}
+
+.carousel-inner>.carousel-item {
+    height: 60vh;
+    /* width: 60vh; */
+}
+
+.carousel-inner>.carousel-item>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(248, 249, 250);
+}
+
+div .rounded-1 {
+    border-radius: .25rem!important;
+}
+
+div .rounded-2 {
+    border-radius: .50rem!important;
+}
+
+div .rounded-3 {
+    border-radius: .50rem!important;
+}
+
+div .rounded-4 {
+    border-radius: .75rem!important;
+}
+
+div .rounded-5 {
+    border-radius: .100rem!important;
+}
+
+.rounded-input-1 {
+    border-radius: 25rem!important;
+}
+
+.rounded-input-2 {
+    border-radius: 50rem!important;
+}
+
+.rounded-input-3 {
+    border-radius: 50rem!important;
+}
+
+.rounded-input-4 {
+    border-radius: 75rem!important;
+}
+
+.rounded-input-5 {
+    border-radius: 100rem!important;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+.fa-user-circle-o {
+    color: gray;
+    display: inline-block;
+    /* width: 100%; */
+    margin-top: 10px;
+}
+
+.icon-username {
+    background: url(../asset/svg/person-outline.svg) no-repeat scroll 1px 1px;
+    background-size: 5%;
+    background-position-x: 1%;
+    background-position: 2%;
+    padding-left: 30px;
+}
+
+.icon-password {
+    background: url(../asset/svg/key.svg) no-repeat scroll 1px 1px;
+    background-size: 5%;
+    background-position-x: 1%;
+    background-position: 2%;
+    padding-left: 30px;
+}
