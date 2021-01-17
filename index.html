@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-center pt-2">
-                        <div class="input-group mx-3 rounded-input-3" id="show_hide_password">
+                        <div class="input-group mx-3 rounded-input-3" id="show_hide_confirm_password">
                             <input class="form-control border password-rounded-pill-left border-right-0 icon-password" placeholder="Ulangi Password"   type="password" name="confirmPasswordTxt" id="confirmPasswordTxt">
                             <span class="input-group-append">
                                 <button class="btn btn-outline-secondary border password-rounded-pill-right border-left-0"
@@ -57,84 +57,10 @@
                     </div>
 
                 </div>
-                <!-- <div class="row justify-content-center">
-                    <img src="asset/img/logo.png" height="100px" class="rounded-circle">
-                </div>
-                <div class="row justify-content-center pt-2">
-                    <div class="input-group">
-                        <input type="text" class="form-control rounded-input-3 icon-username mx-3" placeholder="Username" name="username" id="username">
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-lg-4 ml-3 pr-0">
-            <div class="row justify-content-start pt-3 pl-3">
-                <div class="col-lg-1">
-                    <img src="asset/img/circle-11552760405rj0vtcz24q.png" height="60px" class="rounded-circle">
-                </div>
-                <div class="col-lg-5 pr-4 pl-5 pt-3">
-                    <span class="text-light"><i>PT Colleganza</i></span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col-lg-7 justify-content-center d-flex pt-5">
-            <div class="col-lg-10 pt-5 pl-5 w-70">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active px-auto">
-                            <img class="d-block" src="asset/img/Asem 1.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item px-auto">
-                            <img class="d-block" src="asset/img/Asem 1.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item px-auto">
-                            <img class="d-block" src="asset/img/Asem 2.png" alt="First slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
 
-        </div>
-        <div class="col-lg-4 justify-content-center d-flex p-2 card-heigth">
-            <div class="card shadow-lg bg-white rounded-4 p-3 mb-5" style="width:400px">
-                <div class="row justify-content-center">
-                    <img src="asset/img/circle-11552760405rj0vtcz24q.png" height="60px" class="rounded-circle">
-                </div>
-                <div class="row justify-content-center">
-                    <h3>Sign Up Account</h3>
-                </div>
-                <div class="row justify-content-center pt-2">
-                    <div class="input-group">
-                        <input type="text" class="form-control rounded-input-3 icon-username mx-3"
-                            placeholder="Username" name="username" id="username">
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-2">
-                    <div class="input-group">
-                        <input type="text" class="form-control rounded-input-3 icon-password mx-3"
-                            placeholder="Enter Name Here">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </div>
 
 
     <!-- Optional JavaScript -->
@@ -155,6 +81,19 @@
                     $('#show_hide_password input').attr('type', 'text');
                     $('#show_hide_password i').removeClass("fa-eye-slash");
                     $('#show_hide_password i').addClass("fa-eye");
+                }
+            });
+            $("#show_hide_confirm_password i").on('click', function(event) {
+                console.log('masuk pak aji')
+                event.preventDefault();
+                if ($('#show_hide_confirm_password input').attr("type") == "text") {
+                    $('#show_hide_confirm_password input').attr('type', 'password');
+                    $('#show_hide_confirm_password i').addClass("fa-eye-slash");
+                    $('#show_hide_confirm_password i').removeClass("fa-eye");
+                } else if ($('#show_hide_confirm_password input').attr("type") == "password") {
+                    $('#show_hide_confirm_password input').attr('type', 'text');
+                    $('#show_hide_confirm_password i').removeClass("fa-eye-slash");
+                    $('#show_hide_confirm_password i').addClass("fa-eye");
                 }
             });
         });
