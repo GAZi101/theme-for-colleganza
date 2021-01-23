@@ -46,8 +46,7 @@ h3 {
     width: auto;
 }
 
-.carousel-control.left,
-.carousel-control.right {
+.carousel-control.left, .carousel-control.right {
     background-image: none;
 }
 
@@ -106,10 +105,7 @@ input {
     background-color: transparent;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
 }
 
@@ -160,12 +156,12 @@ button:focus {
     /* Firefox */
 }
 
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: rgb(198, 198, 198);
 }
 
- ::-ms-input-placeholder {
+::-ms-input-placeholder {
     /* Microsoft Edge */
     color: rgb(198, 198, 198);
 }
@@ -190,9 +186,7 @@ button:focus {
     color: #bec6cc;
 }
 
-
 /* nanti di edit */
-
 
 /* Rounded pill classes for horizontal sides */
 
@@ -206,5 +200,38 @@ button:focus {
     border-bottom-right-radius: 50rem !important;
 }
 
+.btn-outline-colleganza {
+    color: rgb(78, 198, 200);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(78, 198, 200);
+}
+
+.btn-outline-colleganza:hover {
+    color: #fff;
+    background-color: rgb(78, 198, 200);
+    border-color: rgb(78, 198, 200);
+}
+
+.btn-colleganza {
+    color: #fff;
+    background-color: rgb(78, 198, 200);
+    border-color: rgb(78, 198, 200);
+}
+
+.btn-colleganza:hover {
+    color: #fff;
+    background-color: rgb(78, 198, 200);
+    border-color: rgb(78, 198, 200)
+}
+
+.bg-colleganza {
+    color: #fff;
+    background-color: rgb(78, 198, 200);
+}
+
+.text-colleganza {
+    color: rgb(78, 198, 200);
+}
 
 /* Another classes to use */
